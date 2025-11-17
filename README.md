@@ -72,7 +72,9 @@ php artisan serve
 ```
 
 Akses panel admin di `http://localhost:8000/admin`  
-Login dengan akun default yang sudah kamu buat.
+Login dengan akun default
+email        : superadmin@payroll.com
+password     : password
 
 ***
 
