@@ -2,7 +2,7 @@
 
 # 🎉 HR & Payroll Management System (Laravel + Filament)
 
-> Sistem keren buat ngatur semua urusan HR dan payroll di perusahaan kamu, supaya gak ribet dan efisien!
+> Sistem buat ngatur semua urusan HR dan payroll di perusahaan kamu, supaya gak ribet dan efisien!
 
 ***
 
