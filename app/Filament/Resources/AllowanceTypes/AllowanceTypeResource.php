@@ -25,9 +25,9 @@ class AllowanceTypeResource extends Resource
 
     protected static string | BackedEnum | null $navigationIcon = 'heroicon-o-credit-card';
 
-    protected static ?string $navigationLabel = 'Master Tunjangan';
+    protected static ?string $navigationLabel = 'Jenis Tunjangan';
 
-    protected static ?string $pluralModelLabel = 'Master Tunjangan';
+    protected static ?string $pluralModelLabel = 'Jenis Tunjangan';
 
     protected static ?int $navigationSort = 21;
 

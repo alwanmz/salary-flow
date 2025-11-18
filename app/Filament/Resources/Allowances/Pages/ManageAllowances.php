@@ -15,7 +15,7 @@ class ManageAllowances extends ManageRecords
     protected function getActions(): array
     {
         return [
-            CreateAction::make(), 
+            CreateAction::make()->label('New Data'), 
         ];
     }
 }

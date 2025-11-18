@@ -55,7 +55,7 @@ class User extends Authenticatable implements FilamentUser, HasAvatar, HasTenant
         return $this->is_active;
     }
 
-    // 👇 MULTI-TENANCY: Define Tenants (Cabang)
+    
     public function getTenants(Panel $panel): Collection
     {
         // Super Admin bisa akses semua cabang
@@ -67,25 +67,23 @@ class User extends Authenticatable implements FilamentUser, HasAvatar, HasTenant
         return \App\Models\Branch::where('id', $this->branch_id)->get();
     }
 
-    // 👇 MULTI-TENANCY: Tenant yang sedang aktif
+
     public function getTenant(Panel $panel): ?Model
     {
         return $this->branch;
     }
 
-    // 👇 MULTI-TENANCY: Cek akses ke tenant
+
     public function canAccessTenant(Model $tenant): bool
     {
-        // Super Admin bisa akses semua
         if ($this->hasRole('super_admin')) {
             return true;
         }
         
-        // User hanya bisa akses cabang sendiri
+        
         return $this->branch_id === $tenant->id;
     }
 
-    // Relationships
     public function branch()
     {
         return $this->belongsTo(Branch::class);

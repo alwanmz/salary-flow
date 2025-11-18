@@ -14,6 +14,7 @@ use App\Models\AllowanceType;
 use App\Models\Allowance;
 use App\Models\SalaryAdjustment;
 use App\Models\LeaveRequest;
+use Illuminate\Support\Facades\URL;
 
 // Import Observers
 use App\Observers\BranchObserver;
@@ -41,6 +42,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        if (env('APP_ENV') !== 'local') {
+        URL::forceScheme('https');
+    }
         // Register ALL Observers HERE
         Branch::observe(BranchObserver::class);
         Department::observe(DepartmentObserver::class);

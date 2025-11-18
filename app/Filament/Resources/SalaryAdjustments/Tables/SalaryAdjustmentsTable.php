@@ -66,18 +66,18 @@ class SalaryAdjustmentsTable
                 TextColumn::make('creator.name')
                     ->label('Dibuat Oleh')
                     ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                    ->hidden(),
 
                 TextColumn::make('approver.name')
                     ->label('Disetujui Oleh')
                     ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                    ->hidden(),
 
                 TextColumn::make('approved_at')
                     ->label('Tgl Disetujui')
                     ->dateTime('d M Y H:i')
                     ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                    ->hidden(),
 
                 TextColumn::make('created_at')
                     ->label('Dibuat')

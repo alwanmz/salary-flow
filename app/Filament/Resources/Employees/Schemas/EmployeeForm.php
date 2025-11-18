@@ -61,7 +61,7 @@ class EmployeeForm
                 Select::make('branch_id')
                     ->label('Cabang')
                     ->relationship(
-                        'branch', 'nama',
+                        'branch', 'nama_cabang',
                         fn($query) => $query->where('is_active', true)
                     )
                     ->searchable()

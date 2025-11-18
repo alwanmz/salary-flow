@@ -15,7 +15,7 @@ class ManageBranches extends ManageRecords
     protected function getActions(): array
     {
         return [
-            CreateAction::make(), // create via modal
+            CreateAction::make()->label('New Data'),
         ];
     }
 }

@@ -62,23 +62,17 @@ class LeaveRequestsTable
                     ->label('Status')
                     ->badge(),
 
-                TextColumn::make('approved_by')
+                TextColumn::make('approver.name')
                     ->label('Disetujui Oleh')
                     ->sortable(),
 
-                TextColumn::make('approved_at')
+                TextColumn::make('updated_at')
                     ->label('Tanggal Disetujui')
                     ->dateTime('d M Y H:i')
                     ->sortable(),
 
                 TextColumn::make('created_at')
                     ->label('Dibuat')
-                    ->dateTime('d M Y H:i')
-                    ->sortable()
-                    ->hidden(),
-
-                TextColumn::make('updated_at')
-                    ->label('Diubah')
                     ->dateTime('d M Y H:i')
                     ->sortable()
                     ->hidden(),

@@ -90,9 +90,8 @@ class LeaveRequestForm
                     ->preload()
                     ->visibleOn(['edit']), // hanya tampil saat edit
 
-                DateTimePicker::make('approved_at')
+                DateTimePicker::make('updated_at')
                     ->label('Tanggal Disetujui')
-                    ->disabled()
                     ->dehydrated(false)
                     ->visibleOn(['edit']),
 

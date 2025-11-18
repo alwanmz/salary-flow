@@ -53,7 +53,7 @@ class EmployeesTable
                     ->hidden()
                     ->badge(),
 
-                TextColumn::make('branch.nama')
+                TextColumn::make('branch.nama_cabang')
                     ->label('Cabang')
                     ->sortable(),
 
@@ -98,6 +98,7 @@ class EmployeesTable
 
                 TextColumn::make('user.name')
                     ->label('User')
+                    ->hidden()
                     ->sortable(),
 
                 IconColumn::make('is_active')
