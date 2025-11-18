@@ -1,66 +1,92 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+***
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# 🎉 HR & Payroll Management System (Laravel + Filament)
 
-## About Laravel
+> Sistem buat ngatur semua urusan HR dan payroll di perusahaan kamu, supaya gak ribet dan efisien!
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+***
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🚀 Tentang Proyek Ini
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Proyek web untuk-manage karyawan, cuti, absensi, dan penggajian lengkap.  
+Dibangun pakai Laravel dan Filament sebagai admin panel, jadi tampilannya clean, modern, dan mudah dipakai.  
+Semua hal yang biasa bikin pusing di urusan gaji dan absen, disatukan jadi satu dashboard yang praktis.
 
-## Learning Laravel
+***
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 🛠️ Tech Stack
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- Backend: Laravel 11.x (PHP framework nomor satu)
+- Panel Admin: Filament 4.x (bikin GUI CRUD makin gampang)
+- Database: MySQL (kuat dan skalabel)
+- Frontend: Blade + Filament components (cepat dan responsif)
+- File Upload, Livewire, Alpine.js & More for seamless UX
+- CI/CD dan deployment bisa sesuaikan kebutuhan
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+***
 
-## Laravel Sponsors
+## 📋 Fitur Keren yang Sudah Beres
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- Manajemen master karyawan & struktur organisasi (cabang, departemen, posisi, jadwal kerja lengkap)  
+- Penggajian: base salary, allowance, salary adjustment, slip gaji otomatis  
+- Absensi & Izin/Cuti: ajukan, approve, upload surat sakit, kelola dengan mudah  
+- BPJS Kesehatan & Ketenagakerjaan (integrasi lengkap)  
+- Filter super canggih buat cari data karyawan, departemen, status, dll  
+- Soft delete, bulk action, restore & edit inline modal super cepet  
+- Upload dokumen & foto karyawan dengan kualitas maksimal  
+- Role-based access ready siap dikembangin!
 
-### Premium Partners
+***
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## 🔮 Fitur yang Bakal Datang
 
-## Contributing
+- Login multi-level (admin, staff, atasan, HRD, dll) plus permission lengkap  
+- Dashboard analitik & grafis real-time buat HR  
+- Export laporan absensi, payroll, cuti dalam format Excel / PDF  
+- Modul slip gaji with payment status & approval workflow  
+- Notifikasi email, WhatsApp atau aplikasi reminder  
+- Integrasi API untuk absensi / payroll eksternal (HRIS partnership)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+***
 
-## Code of Conduct
+## 🛤️ Alur Sistem Singkat
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+1. Admin buat dan update data karyawan lengkap  
+2. Karyawan bisa ajukan cuti/izin/sakit dengan upload surat  
+3. Atasan & HR approve cuti/izin dan input hasil absensi  
+4. Payroll otomatis dihitung tiap bulan, bisa lihat slip  
+5. Semua data bisa difilter, dicari, dan diexport kapan aja
 
-## Security Vulnerabilities
+***
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## ⚡ Cara Mulai
 
-## License
+```bash
+git clone [repo-url]
+cd project-folder
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate --seed
+php artisan serve
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Akses panel admin di `http://localhost:8000/admin`  
+Login dengan akun default
+email        : superadmin@payroll.com
+password     : password
+
+***
+
+## 🙌 Support & Kontribusi
+
+Proyek ini open source, kamu boleh ikut berkontribusi!  
+Buka issue, buat pull request, atau saran fitur langsung yaa.
+
+***
+
+## 📄 Lisensi
+
+MIT License — pakai, modifikasi, dan sebarkan dengan bebas
+
+sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
